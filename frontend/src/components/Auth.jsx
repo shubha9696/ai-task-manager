@@ -63,7 +63,7 @@ export default function Auth() {
           <div className="auth-logo-badge">
             <CheckSquare size={32} color="white" />
           </div>
-          <h2 className="auth-title">VeloTask</h2>
+          <h2 className="auth-title">AI Task Manager</h2>
           <p className="auth-subtitle">
             {isLoginTab ? 'Sign in to manage your tasks' : 'Create an account to get started'}
           </p>

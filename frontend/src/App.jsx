@@ -34,7 +34,7 @@ export default function App() {
               <div className="brand-logo-glow">
                 <CheckSquare size={20} color="white" />
               </div>
-              <h1 className="brand-title">VeloTask</h1>
+              <h1 className="brand-title">AI Task Manager</h1>
             </div>
 
             <div className="header-actions">

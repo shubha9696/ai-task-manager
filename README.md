@@ -1,6 +1,6 @@
-# VeloTask — Premium Kanban Task Manager
+# AI Task Manager — Premium Kanban Task Manager
 
-VeloTask is a modern, high-fidelity, full-stack Kanban-based Task Manager application. It provides an intuitive, responsive dashboard with custom authentication, persistent database storage, visual statistics, and an elegant glassmorphism aesthetic supporting both dark and light modes.
+AI Task Manager is a modern, high-fidelity, full-stack Kanban-based Task Manager application. It provides an intuitive, responsive dashboard with custom authentication, persistent database storage, visual statistics, and an elegant glassmorphism aesthetic supporting both dark and light modes.
 
 ---
 
@@ -163,5 +163,5 @@ This monorepo is fully structured to deploy easily on free tiers of popular clou
    - **Build Command**: `npm run build`
    - **Output Directory**: `dist`
 4. Under **Environment Variables**, add:
-   - Update `frontend/src/config.js` to read from environment variables if desired, or simply edit `frontend/src/config.js` and change the `API_URL` to point to your newly deployed Render URL (e.g., `https://velotask-backend.onrender.com/api`).
+   - Update `frontend/src/config.js` to read from environment variables if desired, or simply edit `frontend/src/config.js` and change the `API_URL` to point to your newly deployed Render URL (e.g., `https://ai-task-manager-backend.onrender.com/api`).
 5. Click **Deploy**. Vercel will build your assets and host your client application on a secure public domain.
