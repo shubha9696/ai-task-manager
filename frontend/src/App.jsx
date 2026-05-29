@@ -8,7 +8,7 @@ import './styles/App.css';
 import './styles/components.css';
 
 export default function App() {
-  const { user, token, logout, isLoading } = useApp();
+  const { user, token, logout, isLoading, isDemoMode } = useApp();
   const [theme, setTheme] = useState(localStorage.getItem('theme') || 'dark');
 
   // Sync theme to document element
@@ -35,6 +35,25 @@ export default function App() {
                 <CheckSquare size={20} color="white" />
               </div>
               <h1 className="brand-title">AI Task Manager</h1>
+              {isDemoMode && (
+                <span
+                  style={{
+                    fontSize: '0.7rem',
+                    background: 'rgba(239, 68, 68, 0.15)',
+                    border: '1px solid rgba(239, 68, 68, 0.25)',
+                    color: '#f87171',
+                    padding: '0.2rem 0.5rem',
+                    borderRadius: '50px',
+                    fontWeight: '600',
+                    marginLeft: '0.5rem',
+                    letterSpacing: '0.5px',
+                    textTransform: 'uppercase'
+                  }}
+                  id="badge-database-demo"
+                >
+                  Offline DB
+                </span>
+              )}
             </div>
 
             <div className="header-actions">
