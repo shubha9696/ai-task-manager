@@ -136,4 +136,32 @@ To run this test:
     │   └── main.jsx
     ├── index.html
     └── package.json
-```
+
+---
+
+## 🌐 Deploving to the Cloud (Submission Ready)
+
+This monorepo is fully structured to deploy easily on free tiers of popular cloud services.
+
+### 1. Backend Deployment (e.g., Render)
+1. Sign up on [Render](https://render.com/).
+2. Create a new **Web Service** and connect your GitHub repository.
+3. Configure the settings:
+   - **Root Directory**: `backend`
+   - **Build Command**: `npm install`
+   - **Start Command**: `npm start`
+4. Under **Environment Variables**, add:
+   - `JWT_SECRET`: `your_custom_secure_key_here`
+5. Click **Deploy Web Service**. Render will host the Express API and auto-generate a persistent SQLite database in the service folder.
+
+### 2. Frontend Deployment (e.g., Vercel)
+1. Sign up on [Vercel](https://vercel.com/).
+2. Click **Add New** -> **Project** and select your GitHub repository.
+3. Configure the deployment settings:
+   - **Root Directory**: `frontend`
+   - **Framework Preset**: `Vite` (automatically detected)
+   - **Build Command**: `npm run build`
+   - **Output Directory**: `dist`
+4. Under **Environment Variables**, add:
+   - Update `frontend/src/config.js` to read from environment variables if desired, or simply edit `frontend/src/config.js` and change the `API_URL` to point to your newly deployed Render URL (e.g., `https://velotask-backend.onrender.com/api`).
+5. Click **Deploy**. Vercel will build your assets and host your client application on a secure public domain.
