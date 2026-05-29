@@ -2,6 +2,10 @@
 
 AI Task Manager is a modern, high-fidelity, full-stack Kanban-based Task Manager application. It provides an intuitive, responsive dashboard with custom authentication, persistent database storage, visual statistics, and an elegant glassmorphism aesthetic supporting both dark and light modes.
 
+### 🌐 Live Production Deployment
+- **Frontend App**: [https://ai-task-manager-drab.vercel.app](https://ai-task-manager-drab.vercel.app)
+- **GitHub Repository**: [https://github.com/shubha9696/ai-task-manager](https://github.com/shubha9696/ai-task-manager)
+
 ---
 
 ## 🚀 Key Features
